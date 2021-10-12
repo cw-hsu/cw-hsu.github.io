@@ -6,7 +6,7 @@ subtitle: I am supposed to have a subtitle?
 
 My name is Chih-Wei Hsu. I am 
 
-- current an analyst @ the Othering and Belonging Institute
+- currently an analyst @ the Othering and Belonging Institute
 - map nerd
 - aspiring morning person
 - ?
