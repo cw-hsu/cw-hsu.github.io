@@ -8,7 +8,7 @@ comments: true
 
 I don't know how to create a form using markdown, so I guess just email me!
 
-![matcha]("/assets/img/matcha.jpg")
+![matcha](assets/img/matcha.jpg)
 
 
 ### Warning
