@@ -9,15 +9,14 @@
 title: Pistachih
 
 # Your name to show in the footer
-author: Chih-Wei Hsu
+author: chih-wei hsu
 
 # --- List of links in the navigation bar --- #
 
 navbar-links:
   About Me: "aboutme"
-  Resources:
-    - Beautiful Jekyll: "https://beautifuljekyll.com"
-    - Learn markdown: "https://www.markdowntutorial.com/"
+  Links:
+    - LinkedIn: "https://www.linkedin.com/in/chihweihsu/"
 
 # --- Logo --- #
 
@@ -42,7 +41,7 @@ social-network-links:
 #  rss: true  # remove this line if you don't want to show an RSS link at the bottom
 #  facebook: deanattali
   github: cw-hsu
-  twitter: pistachih
+#  twitter: pistachih
 #  patreon: DeanAttali
 #  youtube: c/daattali
 #  medium: yourname
@@ -71,7 +70,7 @@ rss-description: This website is a virtual proof that I'm awesome
 
 # Select which social network share links to show in posts
 share-links-active:
-  twitter: true
+  twitter: false
   facebook: false
   linkedin: true
   vk: false
