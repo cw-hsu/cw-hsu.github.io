@@ -7,7 +7,7 @@ subtitle: public space \#1 fan | bike commuter | urbanist | solidarity & repair 
 My name is chih-Wei hsu. I am: 
 
 - formerly @ [Inclusive Action for the City](https://inclusiveaction.org), [Othering & Belonging Institute](https://belonging.berkeley.edu/), [International Council on Clean Transportation](https://theicct.org/)  
-- working on starting a tool library  
+- working on starting a [tool library](https://latoollibrary.org)  
 - a map nerd  
 - a bike commuter transiting in LA   
 
