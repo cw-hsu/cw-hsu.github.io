@@ -1,7 +1,7 @@
 ---
 layout: page
-title: about Me
-subtitle: public space \\#1 fan | bike commuter | solidarity & repair economy
+title: about me
+subtitle: public space \#1 fan | bike commuter | solidarity & repair economy
 permalink: /
 # Optional hero:
 # cover-img: /assets/img/hero.jpg
