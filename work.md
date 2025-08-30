@@ -15,7 +15,7 @@ Click the links to view or download.
 - **[Under the Palms](assets/pdf/landscaper_IAC.pdf)**  
   *Research report on the experiences of the landscaping workers in LA*
 
-- **[LA County Land Bank parcel scoring](https://www.lacountylandbank.info/about)**  
+- **[LA County Land Bank Parcel Scoring](https://www.lacountylandbank.info/about)**  
   *Spatial multi-criteria analysis of 2.4 million parcels in LA county*
 
 - **[Community Field Note](https://www.futureby.community)**  
