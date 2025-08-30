@@ -9,8 +9,8 @@ permalink: /
 
 My name is Chih-Wei Hsu, I am: 
 
-- previously @ [Inclusive Action for the City]("https://inclusiveaction.org"){:target="_blank"}, [Othering and Belonging Institute]("https://belonging.berkeley.edu/"){:target="_blank"}, [International Council on Clean Transportation]("https://theicct.org/"){:target="_blank"}  
-- working on starting a <a href="https://latoollibrary.org/" target="_blank">tool library</a>  
+- previously @ [Inclusive Action for the City](https://inclusiveaction.org){:target="_blank"}, [Othering and Belonging Institute](https://belonging.berkeley.edu/){:target="_blank"}, [International Council on Clean Transportation](https://theicct.org/){:target="_blank"}  
+- working on starting a [tool library](https://latoollibrary.org){:target="_blank"}  
 - a map nerd  
 - a bike commuter transiting in LA   
 
