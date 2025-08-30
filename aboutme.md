@@ -4,11 +4,11 @@ title: about me
 subtitle: public space \\#1 fan | bike commuter | urbanist | solidarity & repair economy
 ---
 
-My name is chih-Wei hsu. I am 
+My name is chih-Wei hsu. I am: 
 
 - formerly @ [Inclusive Action for the City](https://inclusiveaction.org), [Othering & Belonging Institute](https://belonging.berkeley.edu/), [International Council on Clean Transportation](https://theicct.org/)  
 - working on starting a tool library  
-- map & bike nerd  
+- a map & bike nerd  
 - transiting around LA   
 
 
