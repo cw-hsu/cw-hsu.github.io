@@ -15,6 +15,7 @@ author: chih-wei hsu
 
 navbar-links:
   About Me: "aboutme"
+  Resume: "/assets/pdfs/my-document.pdf)"
   Links:
     - LinkedIn: "https://www.linkedin.com/in/chihweihsu/"
 
