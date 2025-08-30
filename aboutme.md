@@ -19,4 +19,3 @@ Get in touch at pistachih at gmail dot com
 Born and raised in Taiwan then up and down the California coast. Have a degree in Energy Technology and Policy from what's now called Cal Poly Humboldt. Professionally a researcher, 
 GIS analyst, project manager. Unprofessionally an urban explorer, fixated on the lack of human-centric design and dreaming of solutions.
 
-<!--- To be honest, I'm having some trouble remembering right now, so why don't you just watch [my movie](https://en.wikipedia.org/wiki/The_Princess_Bride_%28film%29) and it will answer **all** your questions. --->
