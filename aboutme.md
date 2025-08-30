@@ -1,7 +1,7 @@
 ---
 layout: page
 title: about me
-subtitle: public space \#1 fan | bike commuter | urbanist | solidarity & repair economy
+subtitle: public space #1 fan | bike commuter | urbanist | solidarity & repair economy
 ---
 
 My name is chih-Wei hsu. I am 
@@ -12,7 +12,7 @@ My name is chih-Wei hsu. I am
 - transiting around LA   
 
 
-Get in touch at pistachih at gmail dot com
+Get in touch at cw.hsu@outlook.com
 
 ### my journey
 
