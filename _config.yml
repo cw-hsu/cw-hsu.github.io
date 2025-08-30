@@ -14,7 +14,7 @@ author: chih-wei hsu
 # --- List of links in the navigation bar --- #
 
 navbar-links:
-  About Me: "aboutme"
+  # About Me: "aboutme"
   Resume: "/assets/pdf/cw-hsu_resume.pdf"
   Links:
     - LinkedIn: "https://www.linkedin.com/in/chihweihsu/"
