@@ -12,7 +12,7 @@ My name is chih-Wei hsu. I am:
 - a bike commuter transiting in LA   
 
 
-Get in touch at cw.hsu@outlook.com
+Get in touch at cw.hsu@outlook.com. 
 
 ### my journey
 
