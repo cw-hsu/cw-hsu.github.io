@@ -16,8 +16,8 @@ author: chih-wei hsu
 navbar-links:
   Work: "work"
   Resume: "/assets/pdf/cw-hsu_resume.pdf"
-  Links:
-    - LinkedIn: "https://www.linkedin.com/in/chihweihsu/"
+  # Links:
+  #   - LinkedIn: "https://www.linkedin.com/in/chihweihsu/"
 
 # --- Logo --- #
 
