@@ -1,16 +1,22 @@
 ---
 layout: page
-title: About me
-subtitle: Why you'd want to go on a date with me
+title: about me
+subtitle: public space \#1 fan | bike commuter | urbanist | solidarity & repair economy
 ---
 
-My name is Inigo Montoya. I have the following qualities:
+My name is chih-Wei hsu. I am 
 
-- I rock a great mustache
-- I'm extremely loyal to my family
+- formerly @ [Inclusive Action for the City](https://inclusiveaction.org), [Othering & Belonging Institute](https://belonging.berkeley.edu/), [International Council on Clean Transportation](https://theicct.org/)  
+- working on starting a tool library  
+- map & bike nerd  
+- transiting around LA   
 
-What else do you need?
 
-### My story
+Get in touch at pistachih at gmail dot com
 
-To be honest, I'm having some trouble remembering right now, so why don't you just watch [my movie](https://en.wikipedia.org/wiki/The_Princess_Bride_%28film%29) and it will answer **all** your questions.
+### my journey
+
+Born and raised in Taiwan then up and down the California coast. Have a degree in Energy Technology and Policy from what's now called Cal Poly Humboldt. Professionally a researcher, 
+GIS analyst, project manager. Unprofessionally an urban explorer, fixated on the lack of human-centric design and dreaming of solutions.
+
+<!--- To be honest, I'm having some trouble remembering right now, so why don't you just watch [my movie](https://en.wikipedia.org/wiki/The_Princess_Bride_%28film%29) and it will answer **all** your questions. --->
