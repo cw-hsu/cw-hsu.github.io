@@ -1,7 +1,7 @@
 ---
 layout: page
 title: about me
-subtitle: public space #1 fan | bike commuter | urbanist | solidarity & repair economy
+subtitle: public space \\#1 fan | bike commuter | urbanist | solidarity & repair economy
 ---
 
 My name is chih-Wei hsu. I am 
