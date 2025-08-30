@@ -1,6 +1,6 @@
 ---
 layout: page
-title: about me
+title: chih-wei hsu
 subtitle: public space &#35;1 fan | bike commuter | solidarity & repair economy
 permalink: /
 # Optional hero:
