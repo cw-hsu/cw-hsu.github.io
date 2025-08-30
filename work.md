@@ -6,7 +6,6 @@ title: work
 # My Work
 
 Here's a selection of my projects, reports, and publications.  
-Click the links to view or download.
 
 ---
 
