@@ -1,0 +1,44 @@
+---
+layout: null
+---
+
+/* --- General --- */
+
+body {
+  font-family: 'Kodchasan', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  /* --- backup
+  font-family: 'Lora', 'Times New Roman', serif;
+  --- */
+  font-size: 1.125rem;
+  color: {{ site.text-col | default: "#404040" }};
+  position: relative;
+  background-color: {{ site.page-col | default: "#FFFFFF" }};
+  {% if site.page-img %}
+  background-image: url({{ site.page-img | relative_url }});
+  background-attachment: fixed;
+  {% endif %}
+  overflow-wrap: break-word;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  font-family: 'Playfair Display', Georgia, 'Times New Roman', serif;
+  font-weight: 700;
+  /* ---
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: 800;
+  --- */
+  line-height: 1.1;
+}
+
+.intro-header .page-heading .page-subheading,
+.intro-header .post-heading .post-subheading {
+  font-size: 1.6875rem;
+  line-height: 1.1;
+  display: block;
+  font-family: 'Playfair Display', Georgia, 'Times New Roman', serif;
+  /* ---
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  --- */
+  font-weight: 300;
+  margin: 0.625rem 0 0;
+}
