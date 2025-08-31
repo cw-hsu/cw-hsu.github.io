@@ -1,7 +1,7 @@
 ---
 layout: page
 title: chih-wei hsu
-subtitle: public space &#35;1 fan | <a href="/bike">bike</a> commuter | solidarity & repair economy
+subtitle: public space &#35;1 fan | solidarity & repair economy
 permalink: /
 # Optional hero:
 # cover-img: /assets/img/hero.jpg
@@ -12,7 +12,7 @@ My name is Chih-Wei Hsu, I am:
 - previously @ [Inclusive Action for the City](https://inclusiveaction.org){:target="_blank"}, [Othering and Belonging Institute](https://belonging.berkeley.edu/){:target="_blank"}, [International Council on Clean Transportation](https://theicct.org/){:target="_blank"}  
 - working on starting a [tool library](https://latoollibrary.org){:target="_blank"}  
 - a map nerd  
-- a bike commuter transiting in LA   
+- a [bike commuter](/bike) transiting in LA   
 
 
 Get in touch at cw.hsu@outlook.com. 
