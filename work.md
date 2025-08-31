@@ -26,8 +26,7 @@ Here's a selection of my projects, reports, and publications.
 - **[Public EV Charger Access Disparities in CA](https://doi.org/10.1016/j.tranpol.2020.10.003){:target="_blank"}**  
   Graduate thesis published as a journal article in *Transport Policy*
 
-- **[Battery Electric Fleet Feasibility Assessment for Humboldt County Public Transit](assets/pdf/hta-SERC.pdf){:target="_blank"}**
-  
+- **[Battery Electric Fleet Feasibility Assessment for Humboldt County Public Transit](assets/pdf/hta-SERC.pdf){:target="_blank"}**  
   Mixed integer linear optimization for the electric bus infrastructure (method on pg. 99)
 
 ---
@@ -37,6 +36,7 @@ Here's a selection of my projects, reports, and publications.
 - [Los Angeles Tool Library](https://www.latoollibrary.org){:target="_blank"}
 - [Recycling Worker Information Handout](assets/pdf/recycler_trifold-IAC.pdf){:target="_blank"} 
 - [LA County GIS Day 2024 Map Presentation - Historic Map of Cesar Chavez Ave](https://experience.arcgis.com/experience/c093724400ad44cca3113164afadc522/page/Exhibit#data_s=id%3AdataSource_5-0%3A43){:target="_blank"}
+- [LA City Budget Blog Post](assets/pdf/la_budget_blog-IAC.pdf){:target="_blank"}
 
 ---
 
