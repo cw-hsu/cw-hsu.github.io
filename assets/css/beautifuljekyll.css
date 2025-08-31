@@ -12,6 +12,9 @@ html {
 
 body {
   font-family: 'Kodchasan', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  /* --- backup
+  font-family: 'Lora', 'Times New Roman', serif;
+  --- */
   font-size: 1.125rem;
   color: {{ site.text-col | default: "#404040" }};
   position: relative;
@@ -27,8 +30,12 @@ p {
   margin: 1.875rem 0;
 }
 h1,h2,h3,h4,h5,h6 {
+  font-family: 'Playfair Display', Georgia, 'Times New Roman', serif;
+  font-weight: 700;
+  /* ---
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-weight: 800;
+  --- */
   line-height: 1.1;
 }
 h1 {
