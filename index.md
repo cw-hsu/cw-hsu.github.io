@@ -1,7 +1,7 @@
 ---
 layout: page
 title: chih-wei hsu
-subtitle: public space &#35;1 fan | bike commuter | solidarity & repair economy
+subtitle: public space &#35;1 fan | <a href="/bike">bike</a> commuter | solidarity & repair economy
 permalink: /
 # Optional hero:
 # cover-img: /assets/img/hero.jpg
