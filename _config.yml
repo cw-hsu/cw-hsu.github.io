@@ -17,6 +17,7 @@ author: chih-wei hsu
 navbar-links:
   Work: "work"
   Resume: "/assets/pdf/cw-hsu_resume.pdf"
+navbar-links-external:
   Photos: "https://www.flickr.com/photos/pistachih/"
   # Links:
   #   - LinkedIn: "https://www.linkedin.com/in/chihweihsu/"
