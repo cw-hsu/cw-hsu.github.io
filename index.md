@@ -13,9 +13,9 @@ My name is Chih-Wei Hsu, I am:
 - working on starting a [tool library](https://latoollibrary.org){:target="_blank"}  
 - a map nerd  
 - a [bike commuter](/bike) transiting in LA   
-
-
-Get in touch at cw.hsu@outlook.com. 
+- best friend with [bestfriendrickson](https://www.bestfriendrickson.com/){:target="_blank"}  
+  
+Get in touch at cw.hsu@outlook.com.  
 
 ### My Journey
 
