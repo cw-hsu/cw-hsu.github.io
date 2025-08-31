@@ -27,7 +27,8 @@ Here's a selection of my projects, reports, and publications.
 
 ## Other Work
 
-- [Recycling Worker Information Handout](assets/pdf/recycler_trifold-IAC.pdf){:target="_blank"}  
+- [Recycling Worker Information Handout](assets/pdf/recycler_trifold-IAC.pdf){:target="_blank"} 
+- [LA County GIS Day 2024 Map Presentation - Historic Map of Cesar Chavez Ave](https://experience.arcgis.com/experience/c093724400ad44cca3113164afadc522/page/Exhibit#data_s=id%3AdataSource_5-0%3A43){:target="_blank"}
 - [Los Angeles Tool Library](https://www.latoollibrary.org){:target="_blank"}  
 
 ---
@@ -37,4 +38,3 @@ Here's a selection of my projects, reports, and publications.
 - [Treehugger Interview on EV Charging Access](https://www.treehugger.com/successful-ev-adoption-america-make-evs-more-accessible-to-black-communities-5218362){:target="_blank"}  
 
 ---
-
