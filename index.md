@@ -9,14 +9,14 @@ permalink: /
 
 My name is Chih-Wei Hsu, I am:
 
-- previously @ [Inclusive Action for the City](https://inclusiveaction.org){:target="_blank"}, [Othering and Belonging Institute](https://belonging.berkeley.edu/){:target="_blank"}, [International Council on Clean Transportation](https://theicct.org/){:target="_blank"}
 - working on starting a [tool library](https://latoollibrary.org){:target="_blank"}
+- previously @ [Inclusive Action for the City](https://inclusiveaction.org){:target="_blank"}, [Othering and Belonging Institute](https://belonging.berkeley.edu/){:target="_blank"}, [International Council on Clean Transportation](https://theicct.org/){:target="_blank"}
 - a map aficionado
 - a [bike commuter](/bike) transiting in LA
 - best friend with [bestfriendrickson](https://www.bestfriendrickson.com/){:target="_blank"}
 
-📧 Get in touch at cw.hsu@outlook.com.
+📧 Get in touch at pistachih@gmail.com.
 
 ### My Journey
 
-Born and raised in Taiwan then up and down the California coast. Have a degree in Energy Technology and Policy from what's now called Cal Poly Humboldt. Professionally a researcher, GIS analyst, project manager, and a generalist. Unprofessionally an urban explorer, perpetually frustrated by the lack of human-centric design and constantly dreaming of solutions.
+Born and raised in Taiwan then up and down the California coast. Have a degree in Energy Technology and Policy from what’s now called Cal Poly Humboldt. Professionally a researcher, GIS analyst, project manager, and a generalist. Unprofessionally an urban explorer, perpetually frustrated by the lack of human-centric design and constantly dreaming of solutions.
