@@ -20,6 +20,9 @@ Here's a selection of my projects, reports, and publications.
 - **[Community Field Note](https://www.futureby.community){:target="_blank"}**  
   Online resource hub for community ownership of real estate and land
 
+- **[Socal Zoning Analysis & Visualization](https://github.com/OtheringBelonging/SCAGZoning){:target="_blank"}**  
+  Collection, categorization, and [visualization](https://belonging.berkeley.edu/greater-la-region-zoning-maps){:target="_blank"} of zoning code for 191 municipalities in the SCAG region
+
 - **[Seattle EV Charging Needs](assets/pdf/sea-ICCT.pdf){:target="_blank"}**  
   First analysis with focus on equity considerations at ICCT
 
@@ -35,7 +38,7 @@ Here's a selection of my projects, reports, and publications.
 
 - [Los Angeles Tool Library](https://www.latoollibrary.org){:target="_blank"}
 - [Recycling Worker Information Handout](assets/pdf/recycler_trifold-IAC.pdf){:target="_blank"} 
-- [LA County GIS Day 2024 Map Presentation - Historic Map of Cesar Chavez Ave](https://experience.arcgis.com/experience/c093724400ad44cca3113164afadc522/page/Exhibit#data_s=id%3AdataSource_5-0%3A43){:target="_blank"}
+- [LA County GIS Day 2024 Presentation - Historic Map of Cesar Chavez Ave](https://experience.arcgis.com/experience/c093724400ad44cca3113164afadc522/page/Exhibit#data_s=id%3AdataSource_5-0%3A43){:target="_blank"}
 - [LA City Budget Blog Post](assets/pdf/la_budget_blog-IAC.pdf){:target="_blank"}
 
 ---
