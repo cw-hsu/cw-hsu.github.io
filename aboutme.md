@@ -11,7 +11,7 @@ My name is Chih-Wei Hsu. I am:
 - a map nerd
 - a bike commuter transiting in LA
 
-Get in touch at cw.hsu@outlook.com. 
+Get in touch at pistachih@gmail.com. 
 
 ### my journey
 
