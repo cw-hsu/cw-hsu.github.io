@@ -15,7 +15,7 @@ My name is Chih-Wei Hsu, I am:
 - a [bike commuter](/bike) transiting in LA
 - best friends with [bestfriendrickson](https://www.bestfriendrickson.com/){:target="_blank"}
 
-📧 Get in touch at pistachih@gmail.com.
+📧 Get in touch at pistachih at gmail dot com.
 
 ### My Journey
 
