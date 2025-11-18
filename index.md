@@ -19,4 +19,4 @@ My name is Chih-Wei Hsu, I am:
 
 ### My Journey
 
-Born and raised in Taiwan then up and down the California coast. Have a degree in Energy Technology and Policy from what’s now called Cal Poly Humboldt. Professionally a researcher, GIS analyst, project manager, and a generalist. Unprofessionally an urban explorer, perpetually frustrated by the lack of human-centric design and constantly dreaming of solutions.
+Born and raised in Taiwan then tumbled up and down the California coast. Have a degree in Energy Technology and Policy from what’s now called Cal Poly Humboldt. Professionally a researcher, GIS analyst, data scientist, project manager, and generalist. Unprofessionally an urban explorer, perpetually frustrated by the lack of human-centric design and constantly dreaming of solutions.
