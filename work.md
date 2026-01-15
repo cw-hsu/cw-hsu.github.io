@@ -26,6 +26,9 @@ Here's a selection of my projects, reports, and publications.
 - **[Socal Zoning Analysis & Visualization](https://github.com/OtheringBelonging/SCAGZoning){:target="_blank"}**  
   Collection, categorization, and [visualization](https://belonging.berkeley.edu/greater-la-region-zoning-maps){:target="_blank"} of zoning code for 191 municipalities in the SCAG region
 
+- **[Ride-hailing EV Charging Needs for Houston](assets/pdf/hou-ICCT.pdf){:target="_blank"}**  
+  Projection utilizing the generalized additive model and equity-focused prioritization, with examples of charger locations on city-owned properties
+
 - **[Seattle EV Charging Needs](assets/pdf/sea-ICCT.pdf){:target="_blank"}**  
   First analysis with focus on equity considerations at ICCT
 
