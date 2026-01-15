@@ -20,7 +20,7 @@ Here's a selection of my projects, reports, and publications.
 - **[Community Field Note](https://www.futureby.community){:target="_blank"}**  
   Online resource hub for community ownership of real estate and land
 
-- **[Community Owned Real Estate Case Study](assets/pdf/core-IAC.pdf){:target="_blank"}**
+- **[Community Owned Real Estate Case Study](assets/pdf/core-IAC.pdf){:target="_blank"}**  
   Overview and project evaluation of the community ownership model
 
 - **[Socal Zoning Analysis & Visualization](https://github.com/OtheringBelonging/SCAGZoning){:target="_blank"}**  
