@@ -9,7 +9,7 @@ permalink: /
 
 My name is Chih-Wei Hsu, I am:
 
-- working on starting a [tool library](https://latoollibrary.org){:target="_blank"}
+- started the [la tool library](https://latoollibrary.org){:target="_blank"}
 - previously @ [Inclusive Action for the City](https://inclusiveaction.org){:target="_blank"}, [Othering and Belonging Institute](https://belonging.berkeley.edu/){:target="_blank"}, [International Council on Clean Transportation](https://theicct.org/){:target="_blank"}
 - a map aficionado
 - a [bike commuter](/bike) transiting in LA
