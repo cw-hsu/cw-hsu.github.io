@@ -9,7 +9,7 @@ var map = new ol.Map({
 });
 
 //initial view - epsg:3857 coordinates if not "Match project CRS"
-map.getView().fit([-13177145.495476, 4035652.786740, -13159555.850180, 4045319.162504], map.getSize());
+map.getView().fit([-13180652.478599, 4030903.874708, -13145482.133083, 4050220.268843], map.getSize());
 
 //full zooms only
 map.getView().setProperties({constrainResolution: true});
@@ -496,15 +496,416 @@ var bottomRightContainerDiv = document.getElementById('bottom-right-container')
 
 //abstract
 
+var Abstract = new ol.control.Control({
+    element: (() => {
+        var titleElement = document.createElement('div');
+        titleElement.className = 'top-right-abstract ol-control';
+        titleElement.id = 'abstract';
+
+        var linkElement = document.createElement('a');
+
+        if (221 > 240) {
+            linkElement.setAttribute("onmouseenter", "showAbstract()");
+            linkElement.setAttribute("onmouseleave", "hideAbstract()");
+            linkElement.innerHTML = 'i';
+
+            window.hideAbstract = function() {
+                linkElement.classList.add("project-abstract");
+                linkElement.classList.remove("project-abstract-uncollapsed");
+                linkElement.innerHTML = 'i';
+            }
+
+            window.showAbstract = function() {
+                linkElement.classList.remove("project-abstract");
+                linkElement.classList.add("project-abstract-uncollapsed");
+                linkElement.innerHTML = 'Building permits from LA City Open Data Portal (downloaded 4/14/2026). Map shows permits that are within 1 mile of LACC campuses that don\'t have certificate of occupancy, permit type is "Bldg-New", and use is "Apartment".';
+            }
+
+            hideAbstract();
+        } else {
+            linkElement.classList.add("project-abstract-uncollapsed");
+            linkElement.innerHTML = 'Building permits from LA City Open Data Portal (downloaded 4/14/2026). Map shows permits that are within 1 mile of LACC campuses that don\'t have certificate of occupancy, permit type is "Bldg-New", and use is "Apartment".';
+        }
+
+        titleElement.appendChild(linkElement);
+        return titleElement;
+    })(),
+    target: 'top-right-container'
+});
+map.addControl(Abstract);
+
 
 //geolocate
 
 
 
 //measurement
+let measuring = false;
+
+	const measureButton = document.createElement('button');
+	measureButton.className = 'measure-button fas fa-ruler';
+	measureButton.title = 'Measure';
+
+	const measureControl = document.createElement('div');
+	measureControl.className = 'ol-unselectable ol-control measure-control';
+	measureControl.appendChild(measureButton);
+	map.getTargetElement().appendChild(measureControl);
+
+	// Event handler
+	function handleMeasure() {
+	  if (!measuring) {
+		selectLabel.style.display = "";
+		map.addInteraction(draw);
+		createHelpTooltip();
+		createMeasureTooltip();
+		measuring = true;
+	  } else {
+		selectLabel.style.display = "none";
+		map.removeInteraction(draw);
+		map.removeOverlay(helpTooltip);
+		map.removeOverlay(measureTooltip);
+		const staticTooltips = document.getElementsByClassName("tooltip-static");
+		while (staticTooltips.length > 0) {
+		  staticTooltips[0].parentNode.removeChild(staticTooltips[0]);
+		}
+		measureLayer.getSource().clear();
+		sketch = null;
+		measuring = false;
+	  }
+	}
+
+	measureButton.addEventListener('click', handleMeasure);
+	measureButton.addEventListener('touchstart', handleMeasure);
+
+    map.on('pointermove', function(evt) {
+        if (evt.dragging) {
+            return;
+        }
+        if (measuring) {
+            /** @type {string} */
+            var helpMsg = 'Click to start drawing';
+            if (sketch) {
+                var geom = (sketch.getGeometry());
+                if (geom instanceof ol.geom.Polygon) {
+                    helpMsg = continuePolygonMsg;
+                } else if (geom instanceof ol.geom.LineString) {
+                    helpMsg = continueLineMsg;
+                }
+            }
+            helpTooltipElement.innerHTML = helpMsg;
+            helpTooltip.setPosition(evt.coordinate);
+        }
+    });
+    
+
+    var selectLabel = document.createElement("label");
+    selectLabel.innerHTML = "&nbsp;Measure:&nbsp;";
+
+    var typeSelect = document.createElement("select");
+    typeSelect.id = "type";
+
+    var measurementOption = [
+        { value: "LineString", description: "Length" },
+        { value: "Polygon", description: "Area" }
+        ];
+    measurementOption.forEach(function (option) {
+        var optionElement = document.createElement("option");
+        optionElement.value = option.value;
+        optionElement.text = option.description;
+        typeSelect.appendChild(optionElement);
+    });
+
+    selectLabel.appendChild(typeSelect);
+    measureControl.appendChild(selectLabel);
+
+    selectLabel.style.display = "none";
+	/**
+	 * Currently drawn feature.
+	 * @type {ol.Feature}
+	 */
+
+	/**
+	 * The help tooltip element.
+	 * @type {Element}
+	 */
+	var helpTooltipElement;
+
+
+	/**
+	 * Overlay to show the help messages.
+	 * @type {ol.Overlay}
+	 */
+	var helpTooltip;
+
+
+	/**
+	 * The measure tooltip element.
+	 * @type {Element}
+	 */
+	var measureTooltipElement;
+
+
+	/**
+	 * Overlay to show the measurement.
+	 * @type {ol.Overlay}
+	 */
+	var measureTooltip;
+
+
+	/**
+	 * Message to show when the user is drawing a line.
+	 * @type {string}
+	 */
+	var continueLineMsg = 'Click to continue drawing the line';
 
 
 
+	/**
+	 * Message to show when the user is drawing a polygon.
+	 * @type {string}
+	 */
+	var continuePolygonMsg = "1click continue, 2click close";
+
+
+	var typeSelect = document.getElementById("type");
+	var typeSelectForm = document.getElementById("form_measure");
+
+	typeSelect.onchange = function (e) {		  
+	  map.removeInteraction(draw);
+	  addInteraction();
+	  map.addInteraction(draw);		  
+	};
+
+	var measureLineStyle = new ol.style.Style({
+	  stroke: new ol.style.Stroke({ 
+		color: "rgba(0, 0, 255)", //blu
+		lineDash: [10, 10],
+		width: 4
+	  }),
+	  image: new ol.style.Circle({
+		radius: 6,
+		stroke: new ol.style.Stroke({
+		  color: "rgba(255, 255, 255)", 
+		  width: 1
+		}),
+	  })
+	});
+
+	var measureLineStyle2 = new ol.style.Style({	  
+		stroke: new ol.style.Stroke({
+			color: "rgba(255, 255, 255)", 
+			lineDash: [10, 10],
+			width: 2
+		  }),
+	  image: new ol.style.Circle({
+		radius: 5,
+		stroke: new ol.style.Stroke({
+		  color: "rgba(0, 0, 255)", 
+		  width: 1
+		}),
+			  fill: new ol.style.Fill({
+		  color: "rgba(255, 204, 51, 0.4)", 
+		}),
+		  })
+	});
+
+	var labelStyle = new ol.style.Style({
+	  text: new ol.style.Text({
+		font: "14px Calibri,sans-serif",
+		fill: new ol.style.Fill({
+		  color: "rgba(0, 0, 0, 1)"
+		}),
+		stroke: new ol.style.Stroke({
+		  color: "rgba(255, 255, 255, 1)",
+		  width: 3
+		})
+	  })
+	});
+
+	var labelStyleCache = [];
+
+	var styleFunction = function (feature, type) {
+	  var styles = [measureLineStyle, measureLineStyle2];
+	  var geometry = feature.getGeometry();
+	  var type = geometry.getType();
+	  var lineString;
+	  if (!type || type === type) {
+		if (type === "Polygon") {
+		  lineString = new ol.geom.LineString(geometry.getCoordinates()[0]);
+		} else if (type === "LineString") {
+		  lineString = geometry;
+		}
+	  }
+	  if (lineString) {
+		var count = 0;
+		lineString.forEachSegment(function (a, b) {
+		  var segment = new ol.geom.LineString([a, b]);
+		  var label = formatLength(segment);
+		  if (labelStyleCache.length - 1 < count) {
+			labelStyleCache.push(labelStyle.clone());
+		  }
+		  labelStyleCache[count].setGeometry(segment);
+		  labelStyleCache[count].getText().setText(label);
+		  styles.push(labelStyleCache[count]);
+		  count++;
+		});
+	  }
+	  return styles;
+	};
+	var source = new ol.source.Vector();
+
+	var measureLayer = new ol.layer.Vector({
+	  source: source,
+	  displayInLayerSwitcher: false,
+	  style: function (feature) {
+		labelStyleCache = [];
+		return styleFunction(feature);
+	  }
+	});
+
+	map.addLayer(measureLayer);
+
+	var draw; // global so we can remove it later
+	function addInteraction() {
+	  var type = typeSelect.value;
+	  draw = new ol.interaction.Draw({
+		source: source,
+		type: /** @type {ol.geom.GeometryType} */ (type),
+		style: function (feature) {
+				  return styleFunction(feature, type);
+				}
+	  });
+
+	  var listener;
+	  draw.on('drawstart',
+		  function(evt) {
+			// set sketch
+			sketch = evt.feature;
+
+			/** @type {ol.Coordinate|undefined} */
+			var tooltipCoord = evt.coordinate;
+
+			listener = sketch.getGeometry().on('change', function(evt) {
+			  var geom = evt.target;
+			  var output;
+			  if (geom instanceof ol.geom.Polygon) {
+					  output = formatArea(/** @type {ol.geom.Polygon} */ (geom));
+					  tooltipCoord = geom.getInteriorPoint().getCoordinates();
+					} else if (geom instanceof ol.geom.LineString) {
+					  output = formatLength(/** @type {ol.geom.LineString} */ (geom));
+					  tooltipCoord = geom.getLastCoordinate();
+					}
+			  measureTooltipElement.innerHTML = output;
+			  measureTooltip.setPosition(tooltipCoord);
+			});
+		  }, this);
+
+	  draw.on('drawend',
+		  function(evt) {
+			measureTooltipElement.className = 'tooltip tooltip-static';
+			measureTooltip.setOffset([0, -7]);
+			// unset sketch
+			sketch = null;
+			// unset tooltip so that a new one can be created
+			measureTooltipElement = null;
+			createMeasureTooltip();
+			ol.Observable.unByKey(listener);
+		  }, this);
+	}
+
+
+	/**
+	 * Creates a new help tooltip
+	 */
+	function createHelpTooltip() {
+	  if (helpTooltipElement) {
+		helpTooltipElement.parentNode.removeChild(helpTooltipElement);
+	  }
+	  helpTooltipElement = document.createElement('div');
+	  helpTooltipElement.className = 'tooltip hidden';
+	  helpTooltip = new ol.Overlay({
+		element: helpTooltipElement,
+		offset: [15, 0],
+		positioning: 'center-left'
+	  });
+	  map.addOverlay(helpTooltip);
+	}
+
+
+	/**
+	 * Creates a new measure tooltip
+	 */
+	function createMeasureTooltip() {
+	  if (measureTooltipElement) {
+		measureTooltipElement.parentNode.removeChild(measureTooltipElement);
+	  }
+	  measureTooltipElement = document.createElement('div');
+	  measureTooltipElement.className = 'tooltip tooltip-measure';
+	  measureTooltip = new ol.Overlay({
+		element: measureTooltipElement,
+		offset: [0, -15],
+		positioning: 'bottom-center'
+	  });
+	  map.addOverlay(measureTooltip);
+	}
+
+
+  function convertToFeet(length) {
+    feet_length = length * 3.2808;
+    return feet_length
+  }
+
+  /**
+  * format length output
+  * @param {ol.geom.LineString} line
+  * @return {string}
+  */
+  var formatLength = function(line) {
+    var length;
+    var coordinates = line.getCoordinates();
+    length = 0;
+    var sourceProj = map.getView().getProjection();
+    for (var i = 0, ii = coordinates.length - 1; i < ii; ++i) {
+        var c1 = ol.proj.transform(coordinates[i], sourceProj, 'EPSG:4326');
+        var c2 = ol.proj.transform(coordinates[i + 1], sourceProj, 'EPSG:4326');
+        length += ol.sphere.getDistance(c1, c2);
+      }
+      feet_length = convertToFeet(length)
+
+      var output;
+      if (feet_length > 5280) {
+          output = (Math.round(feet_length / 5280 * 100) / 100) + ' miles';
+      } else {
+          output = (Math.round(feet_length * 100) / 100) + ' ft';
+      }
+      return output;
+  };
+
+  /**
+  * Format area output.
+  * @param {ol.geom.Polygon} polygon The polygon.
+  * @return {string} Formatted area.
+  */
+  var formatArea = function (polygon) {
+    var sourceProj = map.getView().getProjection();
+    var geom = polygon.clone().transform(sourceProj, 'EPSG:3857');
+    var area = Math.abs(ol.sphere.getArea(geom));
+    var output;
+    if (area > 2589988) {  // 1 sq mi in square meters
+      output = (Math.round((area / 2589988) * 1000) / 1000) + ' sq mi';
+    } else {
+      output = (Math.round(area * 10.7639 * 100) / 100) + ' sq ft';
+    }
+    return output;
+  };
+
+  addInteraction();
+
+  var parentElement = document.querySelector(".measure-control");
+  var elementToMove = document.getElementById("form_measure");
+  if (elementToMove && parentElement) {
+    parentElement.insertBefore(elementToMove, parentElement.firstChild);
+  }
 
 
 //geocoder
@@ -518,6 +919,12 @@ var bottomRightContainerDiv = document.getElementById('bottom-right-container')
 
 //layerswitcher
 
+var layerSwitcher = new ol.control.LayerSwitcher({
+    tipLabel: "Layers",
+    target: 'top-right-container'
+});
+map.addControl(layerSwitcher);
+    
 
 
 
