@@ -11,7 +11,7 @@ My name is Chih-Wei Hsu, I am:
 
 - probably at the [la tool library](https://latoollibrary.org){:target="_blank"} that I helped start
 - previously @ [Inclusive Action for the City](https://inclusiveaction.org){:target="_blank"}, [Othering and Belonging Institute](https://belonging.berkeley.edu/){:target="_blank"}, [International Council on Clean Transportation](https://theicct.org/){:target="_blank"}, [Schatz Energy Research Center](https://schatzcenter.org){:target="_blank"}
-- a map aficionado
+- a [map](/map) aficionado
 - a [bike commuter](/bike) transiting in LA
 - best friends with [bestfriendrickson](https://www.bestfriendrickson.com/){:target="_blank"}
 
