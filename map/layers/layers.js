@@ -51,30 +51,30 @@ var lyr_Parks_3 = new ol.layer.Vector({
                 interactive: true,
                 title: '<img src="styles/legend/Parks_3.png" /> Parks'
             });
-var format_Bikeways_CityData_4 = new ol.format.GeoJSON();
-var features_Bikeways_CityData_4 = format_Bikeways_CityData_4.readFeatures(json_Bikeways_CityData_4, 
+var format_BikewaysCityData_4 = new ol.format.GeoJSON();
+var features_BikewaysCityData_4 = format_BikewaysCityData_4.readFeatures(json_BikewaysCityData_4, 
             {dataProjection: 'EPSG:4326', featureProjection: 'EPSG:3857'});
-var jsonSource_Bikeways_CityData_4 = new ol.source.Vector({
+var jsonSource_BikewaysCityData_4 = new ol.source.Vector({
     attributions: ' ',
 });
-jsonSource_Bikeways_CityData_4.addFeatures(features_Bikeways_CityData_4);
-var lyr_Bikeways_CityData_4 = new ol.layer.Vector({
+jsonSource_BikewaysCityData_4.addFeatures(features_BikewaysCityData_4);
+var lyr_BikewaysCityData_4 = new ol.layer.Vector({
                 declutter: false,
-                source:jsonSource_Bikeways_CityData_4, 
-                style: style_Bikeways_CityData_4,
-                popuplayertitle: 'Bikeways_(City Data)',
+                source:jsonSource_BikewaysCityData_4, 
+                style: style_BikewaysCityData_4,
+                popuplayertitle: 'Bikeways (City Data)',
                 interactive: true,
-                title: '<img src="styles/legend/Bikeways_CityData_4.png" /> Bikeways_(City Data)'
+                title: '<img src="styles/legend/BikewaysCityData_4.png" /> Bikeways (City Data)'
             });
 
-lyr_GoogleSatellite_0.setVisible(true);lyr_Light_1.setVisible(true);lyr_Dark_2.setVisible(true);lyr_Parks_3.setVisible(true);lyr_Bikeways_CityData_4.setVisible(true);
-var layersList = [lyr_GoogleSatellite_0,lyr_Light_1,lyr_Dark_2,lyr_Parks_3,lyr_Bikeways_CityData_4];
-lyr_Parks_3.set('fieldAliases', {'Name_Alpha': 'Name_Alpha', 'Address': 'Address', 'OBJECTID': 'OBJECTID', });
-lyr_Bikeways_CityData_4.set('fieldAliases', {'Bikeway': 'Bikeway', 'Region': 'Region', 'Street': 'Street', 'Bikeway_Type': 'Bikeway_Type', });
-lyr_Parks_3.set('fieldImages', {'Name_Alpha': 'TextEdit', 'Address': 'TextEdit', 'OBJECTID': 'TextEdit', });
-lyr_Bikeways_CityData_4.set('fieldImages', {'Bikeway': 'TextEdit', 'Region': 'TextEdit', 'Street': 'TextEdit', 'Bikeway_Type': 'TextEdit', });
+lyr_GoogleSatellite_0.setVisible(true);lyr_Light_1.setVisible(true);lyr_Dark_2.setVisible(true);lyr_Parks_3.setVisible(true);lyr_BikewaysCityData_4.setVisible(true);
+var layersList = [lyr_GoogleSatellite_0,lyr_Light_1,lyr_Dark_2,lyr_Parks_3,lyr_BikewaysCityData_4];
+lyr_Parks_3.set('fieldAliases', {'Name_Alpha': 'Name_Alpha', 'Address': 'Address', });
+lyr_BikewaysCityData_4.set('fieldAliases', {'Bikeway': 'Bikeway', 'Region': 'Region', 'Street': 'Street', 'Bikeway_Type': 'Bikeway_Type', });
+lyr_Parks_3.set('fieldImages', {'Name_Alpha': 'TextEdit', 'Address': 'TextEdit', });
+lyr_BikewaysCityData_4.set('fieldImages', {'Bikeway': 'TextEdit', 'Region': 'TextEdit', 'Street': 'TextEdit', 'Bikeway_Type': 'TextEdit', });
 lyr_Parks_3.set('fieldLabels', {'Name_Alpha': 'no label', 'Address': 'no label', 'OBJECTID': 'no label', });
-lyr_Bikeways_CityData_4.set('fieldLabels', {'OBJECTID': 'no label', 'Shape_Leng': 'no label', 'Install_Date': 'no label', 'Network': 'no label', 'Bikeway': 'no label', 'Region': 'no label', 'Street': 'no label', 'From_': 'no label', 'To_': 'no label', 'Datasource_DT': 'no label', 'Bikeway_Type': 'no label', });
-lyr_Bikeways_CityData_4.on('precompose', function(evt) {
+lyr_BikewaysCityData_4.set('fieldLabels', {'OBJECTID': 'no label', 'Shape_Leng': 'no label', 'Install_Date': 'no label', 'Network': 'no label', 'Bikeway': 'no label', 'Region': 'no label', 'Street': 'no label', 'From_': 'no label', 'To_': 'no label', 'Datasource_DT': 'no label', 'Bikeway_Type': 'no label', });
+lyr_BikewaysCityData_4.on('precompose', function(evt) {
     evt.context.globalCompositeOperation = 'normal';
 });
