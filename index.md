@@ -10,7 +10,7 @@ permalink: /
 My name is chih-wei hsu, I am:
 
 - probably at the [la tool library](https://latoollibrary.org){:target="_blank"} that I helped start
-- alum of [inclusive action for the city](https://inclusiveaction.org){:target="_blank"}, [othering and belonging institute](https://belonging.berkeley.edu/){:target="_blank"}, [international council on clean transportation](https://theicct.org/){:target="_blank"}, [schatz energy research center](https://schatzcenter.org){:target="_blank"}, redwood coast energy authority, buddhist tzu chi foundation, liberty ambulance, grits fullerton, 85c bakery, sprouts, octopus sushi, ten ren's tea time, capland, half and half tea express
+- an alum of [inclusive action for the city](https://inclusiveaction.org){:target="_blank"}, [othering and belonging institute](https://belonging.berkeley.edu/){:target="_blank"}, [international council on clean transportation](https://theicct.org/){:target="_blank"}, [schatz energy research center](https://schatzcenter.org){:target="_blank"}, redwood coast energy authority, buddhist tzu chi foundation, liberty ambulance, grits fullerton, 85c bakery, sprouts, octopus sushi, ten ren's tea time, capland, half and half tea express
 - a [map](/map) aficionado
 - a [bike commuter](/bike) transiting in LA
 - best friends with [bestfriendrickson](https://www.bestfriendrickson.com/){:target="_blank"}
