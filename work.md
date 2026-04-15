@@ -5,11 +5,13 @@ title: work
 
 # My Work
 
-Here's a selection of my projects, reports, and publications.  
+A selection of my projects, reports, and publications.  
+
+
 
 ---
 
-## Featured Projects
+## Select past projects
 
 - **[Under the Palms](assets/pdf/landscaper_IAC.pdf){:target="_blank"}**  
   Research on the experiences of the landscaping workers in LA
@@ -40,9 +42,8 @@ Here's a selection of my projects, reports, and publications.
 
 ---
 
-## Other Work
+## Other work
 
-- [Los Angeles Tool Library](https://www.latoollibrary.org){:target="_blank"}
 - [Recycling Worker Information Handout](assets/pdf/recycler_trifold-IAC.pdf){:target="_blank"} 
 - [LA County GIS Day 2024 Presentation - Historic Map of Cesar Chavez Ave](https://experience.arcgis.com/experience/c093724400ad44cca3113164afadc522/page/Exhibit#data_s=id%3AdataSource_5-0%3A43){:target="_blank"}
 - [LA City Budget Blog Post](assets/pdf/la_budget_blog-IAC.pdf){:target="_blank"}
