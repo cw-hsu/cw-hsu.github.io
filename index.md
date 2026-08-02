@@ -9,7 +9,7 @@ permalink: /
 
 Hello, it's me, chih-wei (智崴), I am:
 
-- probably at the [LA tool library](https://latoollibrary.org){:target="_blank"} that I helped start
+- probably at the [LA tool library](https://latoollibrary.org){:target="_blank"}
 - an alum of [inclusive action for the city](https://inclusiveaction.org){:target="_blank"}, [othering and belonging institute](https://belonging.berkeley.edu/){:target="_blank"}, [international council on clean transportation](https://theicct.org/){:target="_blank"}
 - a [map](/map) aficionado
 - a [bike commuter](/bike) transiting and dodging cars in LA
