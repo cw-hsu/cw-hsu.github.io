@@ -21,7 +21,7 @@ var wms_layers = [];
             
             source: new ol.source.XYZ({
             attributions: '&nbsp;&middot; <a href="https://cartodb.com/basemaps/">Map tiles by CartoDB, under CC BY 4.0. Data by OpenStreetMap, under ODbL.</a>',
-                url: 'https://a.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png'
+                url: 'https://a.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png?key=cb1_317d_1_9193175cd9d84a63ef4dcd9d'
             })
         });
 
@@ -33,7 +33,7 @@ var wms_layers = [];
             
             source: new ol.source.XYZ({
             attributions: '&nbsp;&middot; <a href="https://cartodb.com/basemaps/">Map tiles by CartoDB, under CC BY 4.0. Data by OpenStreetMap, under ODbL.</a>',
-                url: 'https://a.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}.png'
+                url: 'https://a.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}.png?key=cb1_317d_1_9193175cd9d84a63ef4dcd9d'
             })
         });
 var format_Parks_3 = new ol.format.GeoJSON();
